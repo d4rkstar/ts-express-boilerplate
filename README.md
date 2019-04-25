@@ -19,15 +19,21 @@ Testing:
 - jest
 - supertest
 
+Linting:
+- eslint
+- prettier
+
 ## Installation
 1. Install dependencies
-```
-# npm -i
+
+```bash
+$ npm -i
 ```
 
 2. Build sources
-```
-# npm run build
+
+```bash
+$ npm run build
 ```
 
 3. If you need, create a database
@@ -39,30 +45,47 @@ Testing:
 6. Migrate database
 
 7. To run tests
-```
-# npm run test
+
+```bash
+$ npm run test
 ```
 
 8. To start
-```
-# npm start
+
+```bash
+$ npm start
 ```
 
 ## Docker
 
 1. Build image
 
-```
-# docker build -t ts-express-boilerplate .
+```bash
+$ docker build -t ts-express-boilerplate .
 ```
 
 2. Run image :)
 
-``` 
-# docker run -d -p 3000:3000 --name ts-express-boilerplate ts-express-boilerplate:latest
+```
+$ docker run -d -p 3000:3000 --name ts-express-boilerplate ts-express-boilerplate:latest
 ```
 
 ## Coding guidelines
+
+I suggest reading this useful article:
+
+[Using ESLint and Prettier in a TypeScript Project](https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb)
+
+To activate ESlint in Webstorm, follow this link:
+
+[ESLint in Webstorm](https://www.jetbrains.com/help/webstorm/eslint.html)
+
+To use ESlint from command line:
+
+```bash
+$ eslint --fix --ignore-path .eslintignore src/*.ts
+```
+
 
 ### Some useful references:
 
