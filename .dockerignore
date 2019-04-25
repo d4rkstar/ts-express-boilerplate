@@ -1,0 +1,7 @@
+.git
+.vagrant
+.idea
+.env
+node_modules
+npm-debug.log
+docs
