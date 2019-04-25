@@ -1,5 +1,7 @@
 # Typescript Express Boilerplate
 
+![CircleCI (all branches)](https://img.shields.io/circleci/project/github/d4rkstar/ts-express-boilerplate.svg)
+
 This boilerplate is a generic "template" for a web application based on
 following components:
 
