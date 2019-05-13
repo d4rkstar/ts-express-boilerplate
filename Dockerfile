@@ -2,16 +2,16 @@ FROM node:11.2-slim
 
 WORKDIR /app
 
+COPY . .
+
 EXPOSE 3000
 
 COPY .env.prod .env
-COPY package.json package.json
-RUN npm install typescript -g
-RUN npm install
 
-COPY . .
-RUN npm run build
+RUN npm install && npm run build
 
-CMD ["node", "dist/"]
+RUN npm install --production
+
+CMD [ "npm", "run", "start" ]
 
 USER node
