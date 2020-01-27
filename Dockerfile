@@ -1,4 +1,4 @@
-FROM node:11.2-slim
+FROM node:node:lts-alpine
 
 WORKDIR /app
 
