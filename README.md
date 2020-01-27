@@ -20,6 +20,7 @@ Utilities:
 Testing:
 - jest
 - supertest
+- sinon
 
 Linting:
 - eslint
@@ -101,6 +102,7 @@ $ eslint --fix --ignore-path .eslintignore src/*.ts
 - *Jest* - <https://jestjs.io/docs>
 - *Supertest* - <https://github.com/visionmedia/supertest>
 - *Superagent* - <http://visionmedia.github.io/superagent/#post-put-requests>
+- *Sinon* - <https://sinonjs.org/>
 - *Tutorial typescript api* - <https://tutorialedge.net/typescript/testing-typescript-api-with-jest/>
 
 ### Deploy to openshift
