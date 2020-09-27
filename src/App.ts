@@ -16,13 +16,10 @@ class App {
     private async mountRoutes(): Promise<void> {
         const router = express.Router();
 
-        router.get(
-            '/ping',
-            (req, res): void => {
-                let result = { message: 'Pong' };
-                res.json(result);
-            },
-        );
+        router.get('/ping', (req, res): void => {
+            const result = { message: 'Pong' };
+            res.json(result);
+        });
 
         this.express.use('/', router);
     }

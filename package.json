@@ -7,7 +7,7 @@
     "build": "tsc",
     "dev": "tsc --watch & node dist",
     "test": "jest",
-    "start": "tsc && node dist/index.js"
+    "start": "node dist/index.js"
   },
   "author": "Bruno Salzano",
   "license": "ISC",
