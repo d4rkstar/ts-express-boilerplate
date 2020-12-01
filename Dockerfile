@@ -13,7 +13,7 @@ RUN rm -rf node_modules && yarn install --production
 FROM node:12.13.0-alpine
 WORKDIR /app
 COPY --from=builder node_modules ./node_modules
-COPY --from=builder sql ./sql
+COPY --from=builder dist ./dist
 COPY --from=builder package.json .
 COPY --from=builder yarn.lock .
 COPY --from=builder entrypoint.sh .
