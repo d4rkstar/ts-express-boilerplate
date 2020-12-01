@@ -21,4 +21,3 @@ const weblogger = webwinston.logger({
 });
 
 export { logger, weblogger };
-export default logger;

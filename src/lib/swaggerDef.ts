@@ -3,7 +3,7 @@ export const options = {
         // Like the one described here: https://swagger.io/specification/#infoObject
         info: {
             title: 'Boilerplate for express and typescript',
-            version: '1.0.0',
+            version: '1.1.0',
             description: 'Just another Boilerplate',
         },
     },

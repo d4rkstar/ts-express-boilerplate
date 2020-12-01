@@ -16,11 +16,9 @@ class App {
         const specs = swaggerJsdoc(swaggerDef.options);
         this.express.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
-        this.mountRoutes().then(
-            (): void => {
-                logger.info('Routes ready!');
-            },
-        );
+        this.mountRoutes().then((): void => {
+            logger.info('Routes ready!');
+        });
     }
 
     private async mountRoutes(): Promise<void> {
@@ -39,13 +37,10 @@ class App {
          *       200:
          *         description: "Pong!"
          */
-        router.get(
-            '/ping',
-            (req, res): void => {
-                let result = { message: 'Pong' };
-                res.json(result);
-            },
-        );
+        router.get('/ping', (req, res): void => {
+            const result = { message: 'Pong' };
+            res.json(result);
+        });
 
         this.express.use('/', router);
     }
