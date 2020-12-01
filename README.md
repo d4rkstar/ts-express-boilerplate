@@ -6,24 +6,25 @@ This boilerplate is a generic "template" for a web application based on
 following components:
 
 Web framework
-- express 4
-- typeorm
+- [express 4](https://expressjs.com/)
+- [typeorm](https://typeorm.io/)
 
 Logging:
-- winston
+- [winston](https://github.com/winstonjs/winston)
 
 Utilities:
-- async
-- dotenv
-- underscore
+- [async](https://caolan.github.io/async/v3/)
+- [dotenv](https://github.com/motdotla/dotenv)
+- [lodash](https://lodash.com/docs/4.17.15)
 
 Testing:
-- jest
-- supertest
+- [jest](https://jestjs.io/)
+- [supertest](https://github.com/visionmedia/supertest)
+- [sinon](https://sinonjs.org/)
 
 Linting:
-- eslint
-- prettier
+- [eslint](https://eslint.org/)
+- [prettier](https://prettier.io/)
 
 ## Installation
 1. Install dependencies
@@ -101,6 +102,7 @@ $ eslint --fix --ignore-path .eslintignore src/*.ts
 - *Jest* - <https://jestjs.io/docs>
 - *Supertest* - <https://github.com/visionmedia/supertest>
 - *Superagent* - <http://visionmedia.github.io/superagent/#post-put-requests>
+- *Sinon* - <https://sinonjs.org/>
 - *Tutorial typescript api* - <https://tutorialedge.net/typescript/testing-typescript-api-with-jest/>
 
 ### Deploy to openshift
