@@ -10,7 +10,10 @@ class App {
         this.express = express();
 
         this.express.use(weblogger);
-        this.mountRoutes();
+
+        this.mountRoutes().then((): void => {
+            logger.info('Routes ready!');
+        });
     }
 
     private async mountRoutes(): Promise<void> {
