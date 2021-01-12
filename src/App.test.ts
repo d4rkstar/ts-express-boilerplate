@@ -10,8 +10,13 @@ describe('App test', () => {
         request(app)
             .get('/ping')
             .set('Accept', 'application/json')
-            .expect(200, {
-                message: 'Pong'
-            }, done);
+            .expect(204, {}, done);
+    });
+
+    it('/favicon.ico', async (done) => {
+        request(app)
+            .get('/favicon.ico')
+            .set('Accept', 'application/json')
+            .expect(204, {}, done);
     });
 });

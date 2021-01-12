@@ -1,5 +1,6 @@
 import * as express from 'express';
 import { logger, weblogger } from './lib/Logger';
+import { BaseRouter } from './routes';
 
 class App {
     public express;
@@ -17,13 +18,7 @@ class App {
     }
 
     private async mountRoutes(): Promise<void> {
-        const router = express.Router();
-
-        router.get('/ping', (req, res): void => {
-            const result = { message: 'Pong' };
-            res.json(result);
-        });
-
+        const router = BaseRouter.init(express.Router());
         this.express.use('/', router);
     }
 }
