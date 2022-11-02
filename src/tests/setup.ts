@@ -10,7 +10,7 @@ beforeAll(
       dotenv.config();
       sandbox = createAppSandbox();
       if (app === undefined) {
-          app = new App();
+          app = new App().express;
       }
   });
 
