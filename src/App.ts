@@ -38,9 +38,9 @@ class App {
     const conn = new DataSource({
       name: "default",
       type: "postgres",
-      username: process.env.TYPEORM_HOST,
-      password: process.env.TYPEORM_USERNAME,
-      host: process.env.TYPEORM_PASSWORD,
+      username: process.env.TYPEORM_USERNAME,
+      password: process.env.TYPEORM_PASSWORD,
+      host: process.env.TYPEORM_HOST,
       database: process.env.TYPEORM_DATABASE,
       schema: process.env.TYPERORM_SCHEMA,
       port: _.toNumber(process.env.TYPEORM_PORT),
