@@ -3,7 +3,7 @@ import { Request, Response } from 'express-serve-static-core';
 
 export class SampleRouter {
   public static init(router: Router): Router {
-    router.get('/sample', SampleRouter.sayHello);
+    router.get('/sample/say-hello', SampleRouter.sayHello);
     return router;
   }
 

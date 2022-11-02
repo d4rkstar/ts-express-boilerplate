@@ -66,7 +66,13 @@ Before start coding, ensure to:
 - Adjust the package.json author and remote git repo
 - Run yarn install to fill node_modules
 - Copy .env.example to .env and adjust variables at your needs
+
+If you need to use database and typeorm:
+- Set USE_TYPEORM to the value of 1 in .env
 - Add a database if you need it and configure datasources (under then datasources folder)
+
+If you don't need to use database and typeorm:
+- Set USE_TYPEORM to the value of 0 in .env
 
 To add new routes and routers, check the ``App::mountRoutes`` method.
 

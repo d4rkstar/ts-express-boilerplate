@@ -5,6 +5,7 @@ import { DataSource } from "typeorm";
 import helmet from "helmet";
 import * as dotenv from "dotenv";
 import { defaultDataSource } from "./datasources";
+import _ from "lodash";
 
 dotenv.config();
 
@@ -33,7 +34,7 @@ class App {
 
     App.connections = [];
 
-    if (!process.env.USE_TYPEORM) return;
+    if (_.toNumber(process.env.USE_TYPEORM)===0) return;
 
     const conn = defaultDataSource;
     await conn.initialize();
