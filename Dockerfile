@@ -6,8 +6,6 @@ COPY . .
 
 RUN yarn install && yarn run build
 
-#RUN curl -sfL https://install.goreleaser.com/github.com/tj/node-prune.sh | bash
-#RUN rm -rf node_modules && yarn install --production && ./bin/node-prune
 RUN rm -rf node_modules && yarn install --production
 
 FROM node:16-alpine
