@@ -59,6 +59,19 @@ $ npm run test
 $ npm start
 ```
 
+## Info
+Before start coding, ensure to:
+- Remove the .git folder
+- If you need to start a new repo, do a ``git init .`` inside the project folder and add files with ``git add .``
+- Adjust the package.json author and remote git repo
+- Run yarn install to fill node_modules
+- Copy .env.example to .env and adjust variables at your needs
+- Add a database if you need it and configure datasources (under then datasources folder)
+
+To add new routes and routers, check the ``App::mountRoutes`` method.
+
+It's quite simple to add new routes!
+
 ## Docker
 
 1. Build image
@@ -69,9 +82,31 @@ $ docker build -t ts-express-boilerplate .
 
 2. Run image :)
 
-```
+```bash
 $ docker run -d -p 3000:3000 --name ts-express-boilerplate ts-express-boilerplate:latest
 ```
+
+## Migrations :-)
+
+Create an entity
+```bash
+$ yarn run typeorm entity:create src/entities/User
+```
+
+and modify at your needs. Then generate migration for this Entity:
+```bash
+$ yarn run  typeorm migration:generate -d dist/Datasource.js src/migrations/use
+```
+
+Finally run migrations:
+
+```bash
+$ yarn run migrate-dev
+```
+
+Info: migrate-dev will build js source before run migrations. If you need to run migrations in prod (!!), you can
+consider the migrate script.
+Adjust datasources at your needs.
 
 ## Coding guidelines
 

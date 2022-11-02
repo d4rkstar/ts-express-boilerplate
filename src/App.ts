@@ -1,10 +1,10 @@
 import express from "express";
 import { logger, weblogger } from "./lib/Logger";
-import { BaseRouter } from "./routes";
+import { BaseRouter, SampleRouter } from "./routes";
 import { DataSource } from "typeorm";
 import helmet from "helmet";
 import * as dotenv from "dotenv";
-import * as _ from "lodash";
+import { defaultDataSource } from "./datasources";
 
 dotenv.config();
 
@@ -35,19 +35,7 @@ class App {
 
     if (!process.env.USE_TYPEORM) return;
 
-    const conn = new DataSource({
-      name: "default",
-      type: "postgres",
-      username: process.env.TYPEORM_USERNAME,
-      password: process.env.TYPEORM_PASSWORD,
-      host: process.env.TYPEORM_HOST,
-      database: process.env.TYPEORM_DATABASE,
-      schema: process.env.TYPERORM_SCHEMA,
-      port: _.toNumber(process.env.TYPEORM_PORT),
-      entities: ["dist/entities/*.js"],
-      logging: process.env.TYPEORM_LOGGING === "1",
-      synchronize: false
-    });
+    const conn = defaultDataSource;
     await conn.initialize();
     App.connections.push(conn);
   }
@@ -81,6 +69,7 @@ class App {
 
   private async mountRoutes(): Promise<void> {
     const router = BaseRouter.init(express.Router());
+    SampleRouter.init(router);
     this.express.use("/", router);
   }
 }

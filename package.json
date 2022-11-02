@@ -10,8 +10,10 @@
     "build": "rimraf dist/* && node_modules/.bin/eslint src/**/*.ts --fix --quiet && node_modules/.bin/tsc",
     "start": "node dist/index.js",
     "start-dev": "node_modules/.bin/tsc && node dist/index.js",
-    "migrate-dev": "node_modules/.bin/tsc && typeorm migration:run --f config/ormconfig.json",
-    "unmigrate-dev": "node_modules/.bin/tsc && typeorm migration:revert --f config/ormconfig.json",
+    "migrate": "node_modules/.bin/typeorm migration:run -d dist/datasources/DefaultDataSource.js",
+    "unmigrate": "node_modules/.bin/typeorm migration:revert -d dist/datasources/DefaultDataSource.js",
+    "migrate-dev": "node_modules/.bin/tsc && node_modules/.bin/typeorm migration:run -d dist/datasources/DefaultDataSource.js",
+    "unmigrate-dev": "node_modules/.bin/tsc && node_modules/.bin/typeorm migration:revert -d dist/datasources/DefaultDataSource.js",
     "test": "jest --detectOpenHandles"
   },
   "author": "Bruno Salzano",
