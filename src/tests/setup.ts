@@ -1,19 +1,19 @@
-// Example
-import { createConnection, getConnection } from 'typeorm';
-import * as dotenv from 'dotenv'
+import * as dotenv from 'dotenv';
+import App from "../App";
+import {createAppSandbox} from "./lib/sandbox";
 
-beforeAll(async () => {
-    dotenv.config();
-    if (process.env.USE_TYPEORM==='true') {
-        const connection = await createConnection();
-    }
+export let sandbox: sinon.SinonSandbox;
+export let app: App;
 
-});
+beforeAll(
+  () => {
+      dotenv.config();
+      sandbox = createAppSandbox();
+      if (app === undefined) {
+          app = new App();
+      }
+  });
 
-afterAll(async () => {
-    dotenv.config();
-    if (process.env.USE_TYPEORM==='true') {
-        await getConnection().close();
-    }
-
+afterAll(() => {
+    sandbox.restore();
 });
