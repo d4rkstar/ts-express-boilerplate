@@ -6,7 +6,7 @@
 This boilerplate is a generic "template" for a web application based on
 following components:
 
-#### :bucket: Web framework
+#### :bucket: Web framework: 
 - [express 4](https://expressjs.com/)
 
 #### :dna: Orm
@@ -29,7 +29,7 @@ following components:
 - [eslint](https://eslint.org/)
 - [prettier](https://prettier.io/)
 
-#### :man_artist:Artwork:
+#### :man_artist: Artwork:
 - by [faudas](https://www.linkedin.com/in/fausto-d-asero-20953835)
 
 
