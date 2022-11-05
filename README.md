@@ -6,32 +6,15 @@
 This boilerplate is a generic "template" for a web application based on
 following components:
 
-#### :bucket: Web framework: 
-- [express 4](https://expressjs.com/)
-
-#### :dna: Orm
-- [typeorm](https://typeorm.io/)
-
-#### :roll_of_paper: Logging:
-- [winston](https://github.com/winstonjs/winston)
-
-#### :toolbox: Utilities:
-- [async](https://caolan.github.io/async/v3/)
-- [dotenv](https://github.com/motdotla/dotenv)
-- [lodash](https://lodash.com/docs/4.17.15)
-
-#### :adhesive_bandage: Testing:
-- [jest](https://jestjs.io/)
-- [supertest](https://github.com/visionmedia/supertest)
-- [sinon](https://sinonjs.org/)
-
-#### :toothbrush: Linting:
-- [eslint](https://eslint.org/)
-- [prettier](https://prettier.io/)
-
-#### :man_artist: Artwork:
-- by [faudas](https://www.linkedin.com/in/fausto-d-asero-20953835)
-
+| Type                       | Technology                                                                                                                                                            |
+|:---------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :bucket: Web Framework     | [ExpressJS 4](https://expressjs.com/)                                                                                                                                 |
+| :dna: Orm                  | [TypeORM](https://typeorm.io/)                                                                                                                                        |
+| :roll_of_paper: Logging    | [Winston](https://github.com/winstonjs/winston)                                                                                                                       |
+| :toolbox: Utilities        | <ul> <li>[Async](https://caolan.github.io/async/v3/)</li><li>[Dotenv](https://github.com/motdotla/dotenv)</li><li>[LOdash](https://lodash.com/docs/4.17.15)</li></ul> | 
+ | :adhesive_bandage: Testing | <ul><li>[Jest](https://jestjs.io/)</li><li>[Supertest](https://github.com/visionmedia/supertest)</li><li>[Sinon,JS](https://sinonjs.org/)</li></ul>                   |
+ | :toothbrush: Linting       | <ul><li>[ESlint](https://eslint.org/)</li><li>[Prettier](https://prettier.io/)</li></ul>                                                                              |
+ | :man_artist: Artwork       | by [faudas](https://www.linkedin.com/in/fausto-d-asero-20953835)                                                                                                      |
 
 ## Installation
 1. Install dependencies
