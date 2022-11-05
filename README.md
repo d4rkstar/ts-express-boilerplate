@@ -20,13 +20,13 @@ following components:
 1. Install dependencies
 
 ```bash
-$ npm -i
+$ yarn -i
 ```
 
 2. Build sources
 
 ```bash
-$ npm run build
+$ yarn run build
 ```
 
 3. If you need, create a database
@@ -40,13 +40,13 @@ $ npm run build
 7. To run tests
 
 ```bash
-$ npm run test
+$ yarn run test
 ```
 
 8. To start
 
 ```bash
-$ npm start
+$ yarn run start
 ```
 
 ## Info
