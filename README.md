@@ -26,8 +26,8 @@ This boilerplate is a generic "template" for a web application based on followin
 1. Clone repository and Install dependencies
 
 ```bash
-$ git clone https://github.com/d4rkstar/ts-express-boilerplate.git
-$ cd ts-express-boilerplate
+$ git clone https://github.com/d4rkstar/ts-express-boilerplate.git my-awesome-project
+$ cd my-awesome-project
 $ yarn install
 ```
 
@@ -65,7 +65,7 @@ Before start coding, ensure to:
 - Adjust the package.json author and remote git repo. Now you can use the ``publish.sh`` script command:
 
 ```bash
-$ ./publish.sh "api-test" "API Endpoint test" "Me"
+$ ./publish.sh "my-awesome-project" "My Awesome Project API Endpoint test" "Me"
 
 File package.json was updated!
 💥 Removing CircleCI original dir
