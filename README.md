@@ -1,4 +1,9 @@
-![This is an image](art/social-media.jpg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="art/screen-dark.jpg">
+  <source media="(prefers-color-scheme: light)" srcset="art/screen-light.jpg">
+  <img alt="ts-express-boilerplate logo" src="art/screen-dark.jpg">
+</picture>
+
 # Typescript Express Boilerplate
 
 ![CircleCI (all branches)](https://img.shields.io/circleci/project/github/d4rkstar/ts-express-boilerplate.svg)
