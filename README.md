@@ -28,7 +28,7 @@ This boilerplate is a generic "template" for a web application based on followin
 ```bash
 $ git clone https://github.com/d4rkstar/ts-express-boilerplate.git
 $ cd ts-express-boilerplate
-$ yarn -i
+$ yarn install
 ```
 
 2. Build sources
