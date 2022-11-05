@@ -1,3 +1,4 @@
+![This is an image](art/social-media.jpg)
 # Typescript Express Boilerplate
 
 ![CircleCI (all branches)](https://img.shields.io/circleci/project/github/d4rkstar/ts-express-boilerplate.svg)
@@ -5,26 +6,32 @@
 This boilerplate is a generic "template" for a web application based on
 following components:
 
-Web framework
+#### :bucket: Web framework: 
 - [express 4](https://expressjs.com/)
+
+#### :dna: Orm
 - [typeorm](https://typeorm.io/)
 
-Logging:
+#### :roll_of_paper: Logging:
 - [winston](https://github.com/winstonjs/winston)
 
-Utilities:
+#### :toolbox: Utilities:
 - [async](https://caolan.github.io/async/v3/)
 - [dotenv](https://github.com/motdotla/dotenv)
 - [lodash](https://lodash.com/docs/4.17.15)
 
-Testing:
+#### :adhesive_bandage: Testing:
 - [jest](https://jestjs.io/)
 - [supertest](https://github.com/visionmedia/supertest)
 - [sinon](https://sinonjs.org/)
 
-Linting:
+#### :toothbrush: Linting:
 - [eslint](https://eslint.org/)
 - [prettier](https://prettier.io/)
+
+#### :man_artist: Artwork:
+- by [faudas](https://www.linkedin.com/in/fausto-d-asero-20953835)
+
 
 ## Installation
 1. Install dependencies
@@ -148,3 +155,5 @@ $ eslint --fix --ignore-path .eslintignore src/*.ts
 
 ### Deploy to openshift
 - *Automatic build and deploy* - <http://www.admin-magazine.com/Archive/2018/47/Automatic-build-and-deploy-with-OpenShift-and-GitLab-CI>
+
+
