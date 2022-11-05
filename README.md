@@ -61,7 +61,18 @@ $ yarn run start
 Before start coding, ensure to:
 - Remove the .git folder
 - Start a new repo, doing a ``git init .`` inside the project folder and adding files with ``git add .``
-- Adjust the package.json author and remote git repo
+- Add a remote url to your git: ``git remote set-url origin <url>``
+- Adjust the package.json author and remote git repo. Now you can use the ``publish.sh`` script command:
+
+```bash
+$ ./publish.sh "api-test" "API Endpoint test" "Me"
+
+File package.json was updated!
+💥 Removing CircleCI original dir
+💥 Removing Art original dir
+🖋️ Generating new README.md
+🔥 Republish Completed!
+```
 - Copy .env.example to .env and adjust variables at your needs
 
 If you need to use database and typeorm:
