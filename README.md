@@ -3,10 +3,9 @@
 
 ![CircleCI (all branches)](https://img.shields.io/circleci/project/github/d4rkstar/ts-express-boilerplate.svg)
 
-This boilerplate is a generic "template" for a web application based on
-following components:
+This boilerplate is a generic "template" for a web application based on following modules:
 
-| Type                       | Technology                                                                                                                                                            |
+| Type                       | Module                                                                                                                                                                |
 |:---------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | :bucket: Web Framework     | [ExpressJS 4](https://expressjs.com/)                                                                                                                                 |
 | :dna: Orm                  | [TypeORM](https://typeorm.io/)                                                                                                                                        |
@@ -16,17 +15,21 @@ following components:
  | :toothbrush: Linting       | <ul><li>[ESlint](https://eslint.org/)</li><li>[Prettier](https://prettier.io/)</li></ul>                                                                              |
  | :man_artist: Artwork       | by [faudas](https://www.linkedin.com/in/fausto-d-asero-20953835)                                                                                                      |
 
-## Installation
-1. Install dependencies
+:it: Made in Italy :it:
+
+## How to start
+1. Clone repository and Install dependencies
 
 ```bash
-$ npm -i
+$ https://github.com/d4rkstar/ts-express-boilerplate.git
+$ cd ts-express-boilerplate
+$ yarn -i
 ```
 
 2. Build sources
 
 ```bash
-$ npm run build
+$ yarn run build
 ```
 
 3. If you need, create a database
@@ -40,21 +43,20 @@ $ npm run build
 7. To run tests
 
 ```bash
-$ npm run test
+$ yarn run test
 ```
 
 8. To start
 
 ```bash
-$ npm start
+$ yarn run start
 ```
 
-## Info
+## :point_right: Info
 Before start coding, ensure to:
 - Remove the .git folder
-- If you need to start a new repo, do a ``git init .`` inside the project folder and add files with ``git add .``
+- Start a new repo, doing a ``git init .`` inside the project folder and adding files with ``git add .``
 - Adjust the package.json author and remote git repo
-- Run yarn install to fill node_modules
 - Copy .env.example to .env and adjust variables at your needs
 
 If you need to use database and typeorm:
