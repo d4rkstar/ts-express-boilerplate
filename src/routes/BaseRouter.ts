@@ -1,5 +1,5 @@
-import { Router } from 'express';
-import { Request, Response } from 'express-serve-static-core';
+import { Router, Request, Response } from 'express';
+
 
 export class BaseRouter {
     public static init(router: Router): Router {
@@ -9,11 +9,11 @@ export class BaseRouter {
         return router;
     }
 
-    private static favicon(req: Request, res: Response): Response {
-        return res.status(204).send();
+    private static favicon(req: Request, res: Response): void {
+        res.status(204).send();
     }
 
-    public static pingResult(req: Request, res: Response): Response {
-        return res.status(204).json({});
+    public static pingResult(req: Request, res: Response): void {
+        res.status(204).json({});
     }
 }

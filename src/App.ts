@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Express } from "express";
 import { logger, weblogger } from "./lib/Logger";
 import { BaseRouter, SampleRouter } from "./routes";
 import { DataSource } from "typeorm";
@@ -11,8 +11,8 @@ dotenv.config();
 
 class App {
 
-  /* eslint-disable  @typescript-eslint/no-explicit-any */
-  public express: any;
+
+  public express: Express;
 
   private static connections: DataSource[];
 
