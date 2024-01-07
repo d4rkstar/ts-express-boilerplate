@@ -3,7 +3,7 @@ jobs:
   node18:
     working_directory: ~/mern-starter # directory where steps will run
     docker:
-      - image: circleci/node:18.18
+      - image: cimg/node:18.18
     steps:
       - checkout
       - run:
@@ -27,7 +27,7 @@ jobs:
   node20:
     working_directory: ~/mern-starter
     docker:
-      - image: circleci/node:20.9
+      - image: cimg/node:20.9
     steps:
       - checkout
       - run:
